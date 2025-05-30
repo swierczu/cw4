@@ -5,7 +5,7 @@
 Nowy projekt tworzymy w folderze cw4 za pomocą komend:
 
 ``` sh
-hugo new site .
+hugo new site --force .
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 ```
 
