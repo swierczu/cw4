@@ -1,0 +1,68 @@
+---
+title: "3"
+date: 2025-05-30T11:05:40+02:00
+draft: false
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<title>Git merge - opis</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    color: #333;
+  }
+  h1 {
+    color: #2c3e50;
+  }
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  code {
+    background: #eee;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Git merge – krótki opis</h1>
+
+<p>
+  Komenda <code>git merge</code> służy do łączenia zmian z jednej gałęzi (branch) do drugiej.
+  Najczęściej używa się jej do scalania feature branchy z gałęzią główną <code>master</code> lub <code>main</code>.
+</p>
+
+<p>
+  Proces łączenia odbywa się przez integrację historii commitów. Jeśli zmiany nie kolidują ze sobą, Git automatycznie scala je w jeden wspólny commit. W przypadku konfliktów, użytkownik musi ręcznie rozwiązać niezgodności w plikach.
+</p>
+
+<h2>Przykładowe użycie:</h2>
+<pre><code>git checkout master
+git merge feature_branch</code></pre>
+
+<p>
+  Powyższe polecenia przełączają się na gałąź <code>master</code> i scalają w nią zmiany z <code>feature_branch</code>.
+</p>
+
+<h2>Dokumentacja Git:</h2>
+<ul>
+  <li><a href="https://git-scm.com/docs/git-merge" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja git merge</a></li>
+  <li><a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging" target="_blank" rel="noopener noreferrer">Git Book – Branching and Merging</a></li>
+</ul>
+
+</body>
+</html>
+
+
