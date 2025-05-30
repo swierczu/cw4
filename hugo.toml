@@ -11,3 +11,10 @@ theme = 'ananke'
   <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
 </ol>
 </section>
+<section>
+<ul>
+  <li>Temperatura: 21°C</li>
+  <li>Wilgotność: 50%</li>
+  <li>Wiatr: 10 km/h</li>
+</ul>
+</section>
