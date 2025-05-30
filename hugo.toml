@@ -2,3 +2,11 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'ananke'
+<section>
+<p>Dzisiaj w Warszawie jest słonecznie.</p>
+<ul>
+  <li>Temperatura: 21°C</li>
+  <li>Wilgotność: 50%</li>
+  <li>Wiatr: 10 km/h</li>
+</ul>
+</section>
