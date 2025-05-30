@@ -1,48 +1,41 @@
 ---
-title: "Gitmerge"
-date: 2025-05-30T12:20:29+02:00
+title: "Mergowanie"
+date: 2025-05-30T11:14:28+02:00
 draft: false
 ---
 
-<style>
-    h1, h2 {
-        color: #2c3e50;
-    }
-    pre {
-        background: #eee;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-    }
-    hr {
-        border: none;
-        border-top: 1px solid #ccc;
-        margin: 30px 0;
-    }
-</style>
+<section>
+    <h2>Mergowanie</h2>
+    <p>Mergowanie to proces łączenia w gicie</p>
+    <p>Merguje sie za pomocą pull requestów</p>
+    <a href="https://git-scm.com/docs/git-merge">Dokumentacja</a> <hr>
 
-<h1>Jak działa komenda <code>git merge</code>?</h1>
+    <p>
+        Komenda <code>git merge</code> służy do łączenia dwóch lub więcej gałęzi (branchy) w Git. Pozwala ona połączyć zmiany wprowadzone w różnych gałęziach, scalając je w jedną wspólną historię. Najczęściej używa się jej, gdy chcemy zintegrować zmiany z gałęzi roboczej (np. <code>feature</code>) do głównej gałęzi (np. <code>main</code>).
+    </p>
+    
+    <h2>Jak działa <code>git merge</code>?</h2>
+    <ul>
+        <li>Git porównuje historię aktualnej gałęzi i gałęzi, którą chcemy połączyć.</li>
+        <li>Próbuje automatycznie scalić zmiany.</li>
+        <li>Jeśli zmiany nie kolidują, scalanie zakończy się automatycznie.</li>
+        <li>W przypadku konfliktów (np. zmiany w tych samych liniach plików), Git poprosi o ręczne rozwiązanie konfliktów.</li>
+    </ul>
+    
+    <h2>Przykład użycia</h2>
+    <pre><code>git checkout main       # Przełącz się na gałąź główną
+    git merge feature       # Połącz gałąź 'feature' z 'main'</code></pre>
+    
+    <hr />
+    
+    <h2>Więcej informacji:</h2>
+    <ul>
+        <li><a href="https://git-scm.com/docs/git-merge" target="_blank" rel="noopener">Oficjalna dokumentacja Git: git-merge</a></li>
+        <li><a href="https://www.atlassian.com/git/tutorials/using-branches/merge" target="_blank" rel="noopener">Przewodnik po scalaniu: Merging in Git</a></li>
+    </ul>
 
-<p>
-    Komenda <code>git merge</code> służy do łączenia dwóch lub więcej gałęzi (branchy) w Git. Pozwala ona połączyć zmiany wprowadzone w różnych gałęziach, scalając je w jedną wspólną historię. Najczęściej używa się jej, gdy chcemy zintegrować zmiany z gałęzi roboczej (np. <code>feature</code>) do głównej gałęzi (np. <code>main</code>).
-</p>
+    <ol>
+        <li>git merge pozwala połączyć historię jednej gałęzi z drugą. Typowo używa się go do wprowadzenia zmian z feature brancha do głównego.</li>
+    </ol>
+</section>
 
-<h2>Jak działa <code>git merge</code>?</h2>
-<ul>
-    <li>Git porównuje historię aktualnej gałęzi i gałęzi, którą chcemy połączyć.</li>
-    <li>Próbuje automatycznie scalić zmiany.</li>
-    <li>Jeśli zmiany nie kolidują, scalanie zakończy się automatycznie.</li>
-    <li>W przypadku konfliktów (np. zmiany w tych samych liniach plików), Git poprosi o ręczne rozwiązanie konfliktów.</li>
-</ul>
-
-<h2>Przykład użycia</h2>
-<pre><code>git checkout main       # Przełącz się na gałąź główną
-git merge feature       # Połącz gałąź 'feature' z 'main'</code></pre>
-
-<hr />
-
-<h2>Więcej informacji:</h2>
-<ul>
-    <li><a href="https://git-scm.com/docs/git-merge" target="_blank" rel="noopener">Oficjalna dokumentacja Git: git-merge</a></li>
-    <li><a href="https://www.atlassian.com/git/tutorials/using-branches/merge" target="_blank" rel="noopener">Przewodnik po scalaniu: Merging in Git</a></li>
-</ul>
