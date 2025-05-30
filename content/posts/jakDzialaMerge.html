@@ -1,0 +1,40 @@
+---
+title: "JakDzialaMerge"
+date: 2025-05-30T12:26:40+02:00
+draft: false
+---
+<h2>Co robi <code>git merge</code>?</h2>
+
+<p>
+  Komenda <code>git merge</code> służy do połączenia zmian z jednej gałęzi (branch) z inną.
+  Najczęściej używana jest do łączenia gałęzi roboczych (np. <code>feature</code>) z główną gałęzią projektu (np. <code>main</code> lub <code>master</code>).
+</p>
+
+<h3>Podstawowe użycie</h3>
+
+<pre><code>$ git checkout main
+$ git merge feature-branch</code></pre>
+
+<p>
+  W tym przykładzie przechodzimy na gałąź <code>main</code> i łączymy do niej zmiany z gałęzi <code>feature-branch</code>.
+</p>
+
+<h3>Typowe zastosowania</h3>
+<ul>
+  <li>Łączenie zakończonych funkcjonalności do głównej gałęzi</li>
+  <li>Aktualizacja bieżącej gałęzi o zmiany z innej</li>
+  <li>Współpraca z innymi programistami nad tym samym repozytorium</li>
+</ul>
+
+<h3>Uwaga na konflikty</h3>
+<p>
+  Podczas łączenia może dojść do konfliktów, jeśli zmiany w tych samych fragmentach pliku pojawiły się na obu gałęziach. W takim przypadku Git poprosi o ręczne rozwiązanie konfliktów.
+</p>
+
+<h3>Dokumentacja</h3>
+<p>
+  Szczegóły na temat <code>git merge</code> znajdziesz w oficjalnej dokumentacji GitHub:
+  <a href="https://docs.github.com/en/get-started/using-git/about-merge-conflicts" target="_blank">
+    https://docs.github.com/en/get-started/using-git/about-merge-conflicts
+  </a>
+</p>
